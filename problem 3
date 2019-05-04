@@ -1,0 +1,35 @@
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main()
+
+{
+	double x, y, z;
+
+	cout << "Enter x value: ";
+	cin >> x;
+	cout << "Enter y value: ";
+	cin >> y;
+	cout << "Enter z value: ";
+	cin >> z;
+	
+	if (x == 1 && y > 1 && y < 5)
+	cout << "V = " << x*y*z;
+	
+	if (x == 1 && y >= 5)
+	cout << "V = " << x+(y/z);
+	
+	if (x == 2 && y <=5 )
+	cout << "V = " << abs((x-y)/z);
+	
+	if (x == 2 && y > 5)
+	cout << "V = " << x - sqrt(y+z);
+	
+	else if (x > 2)
+	cout << "V = " << x+y+z;
+	
+	return 0;
+}
