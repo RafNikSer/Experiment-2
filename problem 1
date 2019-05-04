@@ -1,0 +1,51 @@
+# include <iostream>
+using namespace std;
+main()
+{
+	int package = 0;
+	int additonalHour = 0;
+	int hours = 0;
+		cout<<"What subscription package did you avail \n";
+		cout<<" enter 1- for Package A, enter 2 - for Package B, enter 3- for Package C \n";
+		cin>>package;
+		
+			if(package == 1)
+			{
+				cout<<"You have picked Package A! You have 10 maximum hours \n";
+				cout<<" How many hours did you roam the net? ";
+				cin>> hours;
+					if(hours > 10)
+					{
+						additonalHour += hours-10;
+						cout<<"You have consumed a total of "<<hours<<" hours your total fee is "<<additonalHour*20 + 995;
+					}
+					else{
+						cout<<"Your bill is 995";
+					}
+			
+			}
+			if (package== 2)
+			{
+			
+			cout<<"You have picked Package B! You have 20 maximum hours \n";
+				cout<<" How many hours did you roam the net? ";
+				cin>> hours;
+					if(hours > 20)
+					{
+						additonalHour += hours-20;
+						cout<<"You have consumed a total of "<<hours<<" hours your total fee is "<<additonalHour*10 + 1495<< endl;
+					}
+					else{
+						cout<<"Your bill is 1495";
+					}
+			
+			}
+			
+			if (package== 3)
+			{
+			
+			cout<<"You have picked Package C! You have unlimited hours \n";
+			cout<<"your total fee is 1995";
+		}
+			
+}
