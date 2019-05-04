@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	double g=1.10;
+	double gallons;
+	double RMB;
+
+	
+	cout << "enter amount of gallons consumed \n";
+	cin >> gallons;
+	cout << "enter remaining balance \n";
+	cin >> RMB;
+	
+	if (RMB ==0 )
+	{
+	cout << " Your total bill is " << g*gallons + 35;
+	}
+	else 
+	{
+	cout << "your total bill is " << g*gallons + 35 + RMB + 20;
+	}
+	return 0;
+}
