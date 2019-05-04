@@ -1,0 +1,21 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+
+{
+	int fac;
+	
+	cout << "Enter a Number: ";
+	cin >> fac;
+	
+	for (int i=1 ; i <= 10; i++)
+	
+	cout <<" \n "<< i << " * " << fac<< " = " << i*fac;
+	
+	return 0;
+	
+}
+
